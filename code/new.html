@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Page</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="#"><img src="../images/logo-2.jpg" alt="Image" style="opacity: 0.8;"></a>
+            <div class="main-links" id="navLinks">
+                <i class="fas fa-times" onclick="hidenMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="../contact/contact-form.html">CONTACT US</a></li>
+                    <li><a href="../login/login.html" target="_blank">LOGIN/REGISTER</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+
+
+    
+<!-- .............javascript............ -->
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hidenMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
